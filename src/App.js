@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { ParentOne } from './component/UseState.js/Optimization/ParentOne';
+import { ChildOne } from './component/UseState.js/Optimization/ChildOne';
+import { GrandParent } from './component/UseState.js/Optimization/GrandParent';
+import { ParentTwo } from './component/UseState.js/Optimization/ParentTwo';
+import { ParentThree } from './component/UseState.js/IncorrectOptimization/ParentThree';
+import { ParentFour } from './component/UseState.js/IncorrectOptimization/ParentFour';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ParentFour />
     </div>
   );
 }
